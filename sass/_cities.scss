@@ -1,0 +1,33 @@
+.section-cities {
+    .cities-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(15rem, 20rem));
+        grid-template-rows: repeat(2, auto);
+        grid-gap: 2rem 1rem;
+        justify-content: center;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .city__feature {
+        display: flex;
+        margin-top: 1rem;
+        align-items: center;
+    }
+
+    svg {
+        height: 1.5rem;
+        fill: $color-primary;
+        margin-right: 1rem;
+    }
+}
+
+@include respond(tab-port) {
+    .section-cities .cities-container {
+        grid-template-columns: repeat(4, minmax(15rem, 20rem));
+        grid-template-rows: auto;
+    }
+}

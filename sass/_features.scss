@@ -1,0 +1,23 @@
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(14rem, 18rem));
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 2rem;
+    justify-content: center;
+    justify-items: center;
+    line-height: 1.7;
+    text-align: center;
+
+    & > p {
+        max-width: 70%;
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+}
+
+@media only screen and (min-width: 44em) {
+    .features {
+        grid-template-columns: repeat(4, minmax(15.5rem, 18rem));
+        grid-gap: 2rem;
+    }
+}

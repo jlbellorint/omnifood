@@ -1,0 +1,49 @@
+.section-steps {
+    background-color: #f4f4f4;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+
+    .app-screen {
+        height: 30rem;
+    }
+
+    .steps-list {
+        margin-left: 2rem;
+        width: 34rem;
+    }
+
+    .step {
+        display: flex;
+        margin-bottom: 1.5rem;
+        align-items: center;
+
+        &__number {
+            font-size: 1.7rem;
+            color: $color-primary;
+            height: 3.2rem;
+            min-width: 3.2rem;
+            padding-top: .5rem;
+            text-align: center;
+            border: 1px solid $color-primary;
+            margin-right: 1rem;
+            border-radius: 50%;
+        }
+    }
+
+    .app-btns {
+        margin-left: 4rem;
+    }
+
+    .app-btn {
+        border: 0;
+
+        img {
+            height: 2.8rem;
+        }
+    }
+}

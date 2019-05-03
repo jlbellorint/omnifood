@@ -1,0 +1,42 @@
+$color-primary: #e67e22;
+$color-primary-dark: #cf6d17;;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;  // 10px
+
+    @include respond(tab-land) {
+        font-size: 75%;  // 12px
+    }
+
+    @include respond(desktop) {
+        font-size: 100%;  // 16px
+    }
+
+    @include respond(big-desktop) {
+        font-size: 113%;  // 18px
+    }
+}
+
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    color: #555;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+section {
+    padding: 5rem 3rem;
+
+    @include respond(tab-port) {
+        padding: 8rem 4rem;
+    }
+}

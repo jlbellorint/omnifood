@@ -1,0 +1,36 @@
+.meals-gallery {
+    display: grid;
+    padding: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-color: black;
+
+    .meal {
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            opacity: .7;
+            transform: scale(1.15);
+            transition: all .5s;
+
+            &:hover {
+                opacity: 1;
+                transform: scale(1.04);
+            }
+        }
+    }
+}
+
+@include respond(tab-port) {
+    .meals-gallery {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (hover: none) {
+    .meals-gallery .meal img {
+        opacity: 1; 
+    }
+}

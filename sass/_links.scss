@@ -1,0 +1,16 @@
+a {
+    &:link,
+    &:visited {
+        color: #e67e22;
+        text-decoration: none;
+        padding-bottom: 1px;
+        border-bottom: 1px solid #e67e22;
+        transition: border-bottom 0.2s;
+    }
+
+    &:hover,
+    &:active {
+        color: #555555;
+        border-bottom: 1px solid transparent;
+    }
+}
